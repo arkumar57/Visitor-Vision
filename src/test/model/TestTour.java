@@ -44,11 +44,12 @@ public class TestTour {
 
 
     @Test
-    void testEmptyTouristPlaceListAverageCost() {
+    void testEmptyTouristPlaceListAverageRating() {
         assertEquals(0, tour.getTouristPlacesList().size());
-        //
+        assertEquals(0, tour.averageRating());
 
     }
+
 
     @Test
     void test1TouristPlaceListAverageRating() {
@@ -64,6 +65,13 @@ public class TestTour {
         tour.addTouristPlace(touristPlace2);
         assertEquals(2, tour.getTouristPlacesList().size());
         assertEquals(5,tour.averageRating());
+
+    }
+
+    @Test
+    void testEmptyTouristPlaceListAverageCost() {
+        assertEquals(0, tour.getTouristPlacesList().size());
+        assertEquals(0, tour.averageCost());
 
     }
 

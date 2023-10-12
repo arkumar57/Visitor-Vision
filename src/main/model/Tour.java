@@ -26,9 +26,13 @@ public class Tour {
         int averageRat = 0;
 
 
-        for (TouristPlace x:touristPlacesList) {
-            totalRating += x.getRating();
-            totalPlaces += 1;
+        if (touristPlacesList.isEmpty()) {
+            return 0;
+        } else {
+            for (TouristPlace x:touristPlacesList) {
+                totalRating += x.getRating();
+                totalPlaces += 1;
+            }
         }
 
         averageRat = totalRating / totalPlaces;
@@ -45,9 +49,13 @@ public class Tour {
         int totalPlaces = 0;
         int averageCos = 0;
 
-        for (TouristPlace x:touristPlacesList) {
-            totalCost += x.getPrice();
-            totalPlaces += 1;
+        if (touristPlacesList.isEmpty()) {
+            return 0;
+        } else {
+            for (TouristPlace x:touristPlacesList) {
+                totalCost += x.getPrice();
+                totalPlaces += 1;
+            }
         }
 
         averageCos = totalCost / totalPlaces;
