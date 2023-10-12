@@ -3,7 +3,6 @@ package ui;
 import model.Tour;
 import model.TouristPlace;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class VisitorVision {
@@ -37,26 +36,31 @@ public class VisitorVision {
         System.out.println("\nGoodbye!");
     }
 
+    // MODIFIES: this
+    // EFFECTS: processes user command
     private void processCommand(String command) {
         if (command.equals("a")) {
             addTouristDestination();
         } else if (command.equals("l")) {
             listOfTouristPlaces();
         } else if (command.equals("c")) {
-            averageCost();
+            averagePrice();
         } else if (command.equals("r")) {
-            averageRating();
+            averageOpinion();
         } else {
             System.out.println("Selection not valid...");
         }
     }
 
+    // MODIFIES: this
+    // EFFECTS: initializes input and the tour
     private void init() {
         input = new Scanner(System.in);
         input.useDelimiter("\n");
         tour = new Tour();
     }
 
+    // EFFECTS: displays menu of options to user
     private void displayMenu() {
         System.out.println("\nSelect from:");
         System.out.println("\tA -> addTouristDestination");
@@ -65,6 +69,8 @@ public class VisitorVision {
         System.out.println("\tR -> AverageRatingOfTouristPlacesInACity");
     }
 
+    // MODIFIES: this
+    // EFFECTS:add tourist places to the list
     private void addTouristDestination() {
         // print to ask something
         // ask for input from user
@@ -95,6 +101,8 @@ public class VisitorVision {
 
     }
 
+    // MODIFIES: this
+    // EFFECTS:check whether rating is at most 5
     private void checkRating(int r) {
         if (r > 5) {
             System.out.println("\tinvalid");
@@ -102,6 +110,8 @@ public class VisitorVision {
         }
     }
 
+    // MODIFIES: this
+    // EFFECTS:gets the list of all the tourist places added by user.
     private void listOfTouristPlaces() {
 
         for (TouristPlace x : tour.getTouristPlacesList()) {
@@ -117,12 +127,16 @@ public class VisitorVision {
     }
 
 
-    private void averageCost() {
+    // MODIFIES: this
+    // EFFECTS:gets the average price of visiting all the tourist places added by user.
+    private void averagePrice() {
 
         System.out.println(tour.averageCost());
     }
 
-    private void averageRating() {
+    // MODIFIES: this
+    // EFFECTS:gets the average rating of all the tourist place added by user.
+    private void averageOpinion() {
 
         System.out.println(tour.averageRating());
     }

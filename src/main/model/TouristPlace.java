@@ -19,36 +19,50 @@ public class TouristPlace {
 
     }
 
+    //MODIFIES:this
+    //EFFECTS: gets the name of the tourist place
     public String getName() {
         return name;
     }
 
 
+
+    //MODIFIES:this
+    //EFFECTS: gets the city of the tourist place
     public String getCity() {
         return city;
     }
 
 
+
+    //MODIFIES:this
+    //EFFECTS: gets the country of the tourist place
     public String getCountry() {
         return country;
     }
 
 
+
+    //MODIFIES:this
+    //EFFECTS: gets the location of the tourist place
     public String getLocation() {
         return location;
     }
 
 
+
+    //MODIFIES:this
+    //EFFECTS: gets the rating of the tourist place
     public int getRating() {
         return rating;
     }
 
 
+
+    //MODIFIES:this
+    //EFFECTS: gets the price of visiting the tourist place
     public int getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
 }

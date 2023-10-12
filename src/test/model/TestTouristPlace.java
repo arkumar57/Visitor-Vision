@@ -21,6 +21,7 @@ class TestTouristPlace {
         assertEquals("Waterfront", touristPlace.getName());
         assertEquals("Vancouver", touristPlace.getCity());
         assertEquals("Canada", touristPlace.getCountry());
+        assertEquals("Waterfront Station", touristPlace.getLocation());
         assertEquals(4, touristPlace.getRating());
         assertEquals(0, touristPlace.getPrice());
 
