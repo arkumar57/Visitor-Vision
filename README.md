@@ -13,9 +13,11 @@ help tourist to explore the place to the fullest by following recommendations of
 
 As part of the project a user can:
 - Add a new tourist place of interest in the existing list of places. 
-- View a list of places which can be visited in a particular city.
-- Get a detailed description once selected from the existing list.
+- View a list of places added by the user.
+- Get a detailed description of a tourist place once selected from the existing list.
 - Give ratings to a place which was visited by them.
+- Get average Ratings for list of tourist Places.
+- Get average Cost for visiting a list of tourist Places.
 - 
 
 
