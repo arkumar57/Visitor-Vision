@@ -1,5 +1,7 @@
 package model;
 
+// Represents a tourist place having a name, city, country, location, rating, and price
+
 public class TouristPlace {
     private String name;
     private String city;
@@ -8,6 +10,7 @@ public class TouristPlace {
     private int rating;
     private int price;
 
+    // EFFECTS: Initialise a tourist place
     public TouristPlace(String name, String city, String country, String location, int rating, int price) {
         this.name = name;
         this.city = city;

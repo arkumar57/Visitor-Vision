@@ -5,6 +5,8 @@ import model.TouristPlace;
 
 import java.util.Scanner;
 
+// Visitor Vision Application
+
 public class VisitorVision {
 
     private Scanner input;
@@ -63,10 +65,10 @@ public class VisitorVision {
     // EFFECTS: displays menu of options to user
     private void displayMenu() {
         System.out.println("\nSelect from:");
-        System.out.println("\tA -> addTouristDestination");
-        System.out.println("\tL -> CurrentListOfTouristPlaces");
-        System.out.println("\tC -> AverageCostInACity");
-        System.out.println("\tR -> AverageRatingOfTouristPlacesInACity");
+        System.out.println("\tA -> add Tourist Destination");
+        System.out.println("\tL -> Current List Of Tourist Places");
+        System.out.println("\tC -> Average Cost In A City");
+        System.out.println("\tR -> Average Rating Of Tourist Places In THE LIST");
     }
 
     // MODIFIES: this

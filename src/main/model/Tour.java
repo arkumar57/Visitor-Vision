@@ -3,14 +3,18 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+// Represents a list of tourist places and calculate average price and average rating for all tourist places in the list
+
 public class Tour {
     protected List<TouristPlace> touristPlacesList;
+    private double averageRat;
 
     //REQUIRES:
     //MODIFIES:this
     //EFFECTS:Initiate the constructors with a new Arraylist of touristPlaces
     public Tour() {
         this.touristPlacesList = new ArrayList<>();
+        averageRat = 0;
     }
 
 
@@ -31,11 +35,10 @@ public class Tour {
     //REQUIRES:
     //MODIFIES:this
     //EFFECTS:Checks if tourists place list is empty and returns average rating of all the tourist places in the list
-    public int averageRating() {
+    public double averageRating() {
 
-        int totalRating = 0;
-        int totalPlaces = 0;
-        int averageRat = 0;
+        double totalRating = 0;
+        double totalPlaces = 0;
 
 
         if (touristPlacesList.isEmpty()) {
@@ -56,10 +59,10 @@ public class Tour {
     //REQUIRES:
     //MODIFIES:this
     //EFFECTS:Checks if tourists place list is empty and returns average cost of all the tourist places in the list.
-    public int averageCost() {
-        int totalCost = 0;
-        int totalPlaces = 0;
-        int averageCos = 0;
+    public double averageCost() {
+        double totalCost = 0.0;
+        double totalPlaces = 0.0;
+        double averageCos = 0.0;
 
         if (touristPlacesList.isEmpty()) {
             return 0;

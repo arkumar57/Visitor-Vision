@@ -12,13 +12,11 @@ help tourist to explore the place to the fullest by following recommendations of
 
 
 As part of the project a user can:
-- Add a new tourist place of interest in the existing list of places. 
-- View a list of places added by the user.
-- Get a detailed description of a tourist place once selected from the existing list.
-- Give ratings to a place which was visited by them.
-- Get average Ratings for list of tourist Places.
-- Get average Cost for visiting a list of tourist Places.
-- 
+- As a user, I am able to Add a new tourist place of interest in the list of places. 
+- As a user, I am able to View a list of places added.
+- As a user, I am able to get a description of tourist places in the list.
+- As a user, I am able to get average Ratings for list of tourist Places.
+- As a user, I am able to get average Cost for visiting a list of tourist Places.
 
 
 
