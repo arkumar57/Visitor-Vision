@@ -116,14 +116,19 @@ public class VisitorVision {
     // EFFECTS:gets the list of all the tourist places added by user.
     private void listOfTouristPlaces() {
 
+        int y = 0;
+
         for (TouristPlace x : tour.getTouristPlacesList()) {
 
-            System.out.println(x.getName());
-            System.out.println(x.getCity());
-            System.out.println(x.getCountry());
-            System.out.println(x.getLocation());
-            System.out.println(x.getPrice());
-            System.out.println(x.getRating());
+            y += 1;
+            System.out.println("Tourist Place No: " + y);
+            System.out.println("Name: " + x.getName());
+            System.out.println("City: " + x.getCity());
+            System.out.println("Country: " + x.getCountry());
+            System.out.println("Location: " + x.getLocation());
+            System.out.println("Price: " + x.getPrice());
+            System.out.println("Rating: " + x.getRating());
+
 
         }
     }
