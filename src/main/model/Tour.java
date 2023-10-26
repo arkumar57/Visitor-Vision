@@ -1,13 +1,18 @@
 package model;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+import persistence.Writable;
+
 import java.util.ArrayList;
 import java.util.List;
 
 // Represents a list of tourist places and calculate average price and average rating for all tourist places in the list
 
-public class Tour {
+public class Tour implements Writable {
     protected List<TouristPlace> touristPlacesList;
     private double averageRat;
+    private double averageCos;
 
     //REQUIRES:
     //MODIFIES:this
@@ -15,6 +20,7 @@ public class Tour {
     public Tour() {
         this.touristPlacesList = new ArrayList<>();
         averageRat = 0;
+        averageCos = 0;
     }
 
 
@@ -62,7 +68,6 @@ public class Tour {
     public double averageCost() {
         double totalCost = 0.0;
         double totalPlaces = 0.0;
-        double averageCos = 0.0;
 
         if (touristPlacesList.isEmpty()) {
             return 0;
@@ -78,5 +83,23 @@ public class Tour {
 
     }
 
+
+    @Override
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        json.put("Average Cost", averageCos);
+        json.put("Average Rating", averageRat);
+        json.put("Tourist Places", touristPlacesToJson());
+        return json;
+    }
+
+    // EFFECTS: returns tourist places in this tour as a JSON array
+    private JSONArray touristPlacesToJson() {
+        JSONArray jsonArray = new JSONArray();
+        for (TouristPlace t:touristPlacesList) {
+            jsonArray.put(t.toJson());
+        }
+        return jsonArray;
+    }
 
 }

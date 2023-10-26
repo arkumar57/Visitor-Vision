@@ -2,18 +2,27 @@ package ui;
 
 import model.Tour;
 import model.TouristPlace;
+import persistence.JsonReader;
+import persistence.JsonWriter;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 // Visitor Vision Application
 
 public class VisitorVision {
 
+    private static final String JSON_STORE = "./data/workroom.json";
     private Scanner input;
     private TouristPlace touristPlace;
     private Tour tour;
+    private JsonWriter jsonWriter;
+    private JsonReader jsonReader;
 
-    public VisitorVision() {
+    public VisitorVision() throws FileNotFoundException {
+        jsonWriter = new JsonWriter(JSON_STORE);
+        jsonReader = new JsonReader(JSON_STORE);
         runVision();
     }
 
@@ -49,6 +58,10 @@ public class VisitorVision {
             averagePrice();
         } else if (command.equals("r")) {
             averageOpinion();
+        } else if (command.equals("s")) {
+            saveTour();
+        }  else if (command.equals("w")) {
+            loadTour();
         } else {
             System.out.println("Selection not valid...");
         }
@@ -69,7 +82,11 @@ public class VisitorVision {
         System.out.println("\tL -> Current List Of Tourist Places");
         System.out.println("\tC -> Average Cost In A City");
         System.out.println("\tR -> Average Rating Of Tourist Places In THE LIST");
+        System.out.println("\ts -> save work room to file");
+        System.out.println("\tw -> load work room from file");
+
     }
+
 
     // MODIFIES: this
     // EFFECTS:add tourist places to the list
@@ -148,9 +165,27 @@ public class VisitorVision {
         System.out.println(tour.averageRating());
     }
 
+    // EFFECTS: saves the Tour to file
+    private void saveTour() {
+        try {
+            jsonWriter.open();
+            jsonWriter.write(tour);
+            jsonWriter.close();
+            System.out.println("Saved " + " to " + JSON_STORE);
+        } catch (FileNotFoundException e) {
+            System.out.println("Unable to write to file: " + JSON_STORE);
+        }
+    }
 
-
-
-
+    // MODIFIES: this
+    // EFFECTS: loads Tour from file
+    private void loadTour() {
+        try {
+            tour = jsonReader.read();
+            System.out.println("Loaded " + " from " + JSON_STORE);
+        } catch (IOException e) {
+            System.out.println("Unable to read from file: " + JSON_STORE);
+        }
+    }
 
 }

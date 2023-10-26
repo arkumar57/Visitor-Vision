@@ -2,7 +2,10 @@ package model;
 
 // Represents a tourist place having a name, city, country, location, rating, and price
 
-public class TouristPlace {
+import org.json.JSONObject;
+import persistence.Writable;
+
+public class TouristPlace implements Writable {
     private String name;
     private String city;
     private String country;
@@ -67,5 +70,18 @@ public class TouristPlace {
     public int getPrice() {
         return price;
     }
+
+    @Override
+    public JSONObject toJson() {
+        JSONObject json = new JSONObject();
+        json.put("name", name);
+        json.put("city",city);
+        json.put("country", country);
+        json.put("location", location);
+        json.put("rating", rating);
+        json.put("price", price);
+        return json;
+    }
+
 
 }
