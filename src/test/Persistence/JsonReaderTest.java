@@ -31,7 +31,7 @@ public class JsonReaderTest extends JsonTest{
             Tour tour = reader.read();
             assertEquals(0, tour.getTouristPlacesList().size());
         } catch (IOException e) {
-           // pass
+            fail("Couldn't read from file");
         }
     }
 
@@ -46,9 +46,9 @@ public class JsonReaderTest extends JsonTest{
                     "Waterfront Station", 4, 0, touristPlaces.get(0));
 
             checkTouristPlace("Wreck Beach", "Vancouver", "Canada",
-                    "UBC BUS LOOP", 6, 30, touristPlaces.get(1));
+                    "UBC BUS LOOP", 5, 30, touristPlaces.get(1));
         } catch (IOException e) {
-            // pass
+            fail("Couldn't read from file");
         }
     }
 

@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class VisitorVision {
 
-    private static final String JSON_STORE = "./data/workroom.json";
+    private static final String JSON_STORE = "./data/tour.json";
     private Scanner input;
     private TouristPlace touristPlace;
     private Tour tour;

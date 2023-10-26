@@ -13,10 +13,10 @@
             "city": "Vancouver",
             "price": 30,
             "name": "Wreck Beach",
-            "rating": 6,
+            "rating": 5,
             "location": "UBC BUS LOOP"
         }
     ],
-    "Average Cost": 0,
-    "Average Rating": 0
+    "Average Cost": 15,
+    "Average Rating": 4.5
 }

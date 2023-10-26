@@ -50,7 +50,7 @@ public class JsonWriterTest extends JsonTest{
             tour.addTouristPlace(new TouristPlace("Waterfront", "Vancouver", "Canada",
                     "Waterfront Station", 4, 0));
             tour.addTouristPlace(new TouristPlace("Wreck Beach", "Vancouver", "Canada",
-                    "UBC BUS LOOP", 6, 30));
+                    "UBC BUS LOOP", 5, 30));
             JsonWriter writer = new JsonWriter("./data/testWriterGeneralTour.json");
             writer.open();
             writer.write(tour);
@@ -64,7 +64,7 @@ public class JsonWriterTest extends JsonTest{
                     "Waterfront Station", 4, 0, touristPlaces.get(0));
 
             checkTouristPlace("Wreck Beach", "Vancouver", "Canada",
-                    "UBC BUS LOOP", 6, 30, touristPlaces.get(1));
+                    "UBC BUS LOOP", 5, 30, touristPlaces.get(1));
 
         } catch (IOException e) {
             fail("Exception should not have been thrown");

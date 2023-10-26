@@ -1,0 +1,22 @@
+{
+    "Tourist Places": [
+        {
+            "country": "dsd",
+            "city": "da",
+            "price": 60,
+            "name": "ss",
+            "rating": 4,
+            "location": "dd"
+        },
+        {
+            "country": "sa",
+            "city": "asfa",
+            "price": 40,
+            "name": "vsd",
+            "rating": 6,
+            "location": "sfa"
+        }
+    ],
+    "Average Cost": 50,
+    "Average Rating": 5
+}

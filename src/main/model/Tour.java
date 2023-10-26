@@ -87,8 +87,8 @@ public class Tour implements Writable {
     @Override
     public JSONObject toJson() {
         JSONObject json = new JSONObject();
-        json.put("Average Cost", averageCos);
-        json.put("Average Rating", averageRat);
+        json.put("Average Cost", averageCost());
+        json.put("Average Rating", averageRating());
         json.put("Tourist Places", touristPlacesToJson());
         return json;
     }

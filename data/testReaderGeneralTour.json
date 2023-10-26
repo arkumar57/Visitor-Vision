@@ -1,0 +1,22 @@
+{
+  "Tourist Places": [
+    {
+      "country": "Canada",
+      "city": "Vancouver",
+      "price": 0,
+      "name": "Waterfront",
+      "rating": 4,
+      "location": "Waterfront Station"
+    },
+    {
+      "country": "Canada",
+      "city": "Vancouver",
+      "price": 30,
+      "name": "Wreck Beach",
+      "rating": 5,
+      "location": "UBC BUS LOOP"
+    }
+  ],
+  "Average Cost": 0,
+  "Average Rating": 0
+}
