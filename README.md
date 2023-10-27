@@ -17,7 +17,7 @@ As part of the project a user can:
 - As a user, I am able to get a description of tourist places in the list.
 - As a user, I am able to get average Ratings for list of tourist Places.
 - As a user, I am able to get average Cost for visiting a list of tourist Places.
-- As a user, I am able to save the list of the tourist places added.
+- As a user, I am able to save the list of the tourist places.
 - As a user, I am able to load the list of the tourist places.
 
 
