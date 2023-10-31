@@ -47,6 +47,8 @@ public class JsonReaderTest extends JsonTest{
 
             checkTouristPlace("Wreck Beach", "Vancouver", "Canada",
                     "UBC BUS LOOP", 5, 30, touristPlaces.get(1));
+            assertEquals(15, tour.averageCost());
+            assertEquals(4.5, tour.averageRating());
         } catch (IOException e) {
             fail("Couldn't read from file");
         }
