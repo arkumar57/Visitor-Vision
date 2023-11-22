@@ -1,22 +1,12 @@
 {
-    "Tourist Places": [
-        {
-            "country": "asdf",
-            "city": "sdd",
-            "price": 60,
-            "name": "sdd",
-            "rating": 4,
-            "location": "asads"
-        },
-        {
-            "country": "sds",
-            "city": "sds",
-            "price": 40,
-            "name": "dfb",
-            "rating": 3,
-            "location": "dss"
-        }
-    ],
+    "Tourist Places": [{
+        "country": "sdfwe",
+        "city": "sefwe",
+        "price": 50,
+        "name": "ss",
+        "rating": 4,
+        "location": "sfw"
+    }],
     "Average Cost": 50,
-    "Average Rating": 3.5
+    "Average Rating": 4
 }

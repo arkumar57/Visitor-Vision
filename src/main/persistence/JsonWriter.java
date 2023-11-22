@@ -8,6 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 // Represents a writer that writes JSON representation of tour to file
+// Referencing for JSON Realisation from JSON SERIALISATION DEMO;
 public class JsonWriter {
 
     private static final int TAB = 4;

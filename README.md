@@ -17,9 +17,19 @@ As part of the project a user can:
 - As a user, I am able to get a description of tourist places in the list.
 - As a user, I am able to get average Ratings for list of tourist Places.
 - As a user, I am able to get average Cost for visiting a list of tourist Places.
-- As a user, I am able to save the list of the tourist places.
+- As a user, I am able to save the list of the tourist places, 
 - As a user, I am able to load the list of the tourist places.
 
 
 
+
+### Instructions for Grader
+
+
+- You can generate the first required action to the user story "Add a new tourist 
+  place of interest in the list of places." by clicking on the button visible as soon as you run the application.
+- You can generate the Second required action to the user story "save the list of the tourist places, " 
+  by clicking on the button visible as soon as you run the application.
+- You can "load the list of the tourist places, " by clicking on the button visible as soon as you run the application.
+- The Visual Component is visible on the background of the pop-up window as soon as you run the application.
 

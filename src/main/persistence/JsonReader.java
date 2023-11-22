@@ -12,6 +12,7 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 // Represents a reader that reads tour from JSON data stored in file
+// Referencing for JSON Realisation from JSON SERIALISATION DEMO;
 public class JsonReader {
 
     private String source;
