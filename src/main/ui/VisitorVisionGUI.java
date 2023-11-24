@@ -194,14 +194,10 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
         for (TouristPlace x : tour.getTouristPlacesList()) {
 
             y += 1;
-            JOptionPane.showInputDialog(this, y);
-            JOptionPane.showInputDialog(this, "Name: " + x.getName());
-            JOptionPane.showInputDialog(this, "City: " + x.getCity());
-            JOptionPane.showInputDialog(this, "Country: " + x.getCountry());
-            JOptionPane.showInputDialog(this, "Location: " + x.getLocation());
-            JOptionPane.showInputDialog(this, "Price: " + x.getPrice());
-            JOptionPane.showInputDialog(this, "Rating: " + x.getRating());
-
+            JOptionPane.showMessageDialog(this, "tourist Place: " + y + ": " + "\n" + " Name: "
+                    + x.getName()
+                    + "\n" + "\t City: " + x.getCity() + "\n" + "\t Country: " + x.getCountry() + "\n" + "\t Location: "
+                    + x.getLocation() + "\n" + "\t Price: " + x.getPrice() + "\n" + "\t Rating: " + x.getRating());
 
         }
     }

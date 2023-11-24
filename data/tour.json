@@ -1,12 +1,12 @@
 {
     "Tourist Places": [{
-        "country": "sdfwe",
-        "city": "sefwe",
-        "price": 50,
-        "name": "ss",
+        "country": "adsf",
+        "city": "dfs",
+        "price": 30,
+        "name": "fsaf",
         "rating": 4,
-        "location": "sfw"
+        "location": "faa"
     }],
-    "Average Cost": 50,
+    "Average Cost": 30,
     "Average Rating": 4
 }
