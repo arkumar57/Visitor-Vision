@@ -1,12 +1,22 @@
 {
-    "Tourist Places": [{
-        "country": "adsf",
-        "city": "dfs",
-        "price": 30,
-        "name": "fsaf",
-        "rating": 4,
-        "location": "faa"
-    }],
-    "Average Cost": 30,
-    "Average Rating": 4
+    "Tourist Places": [
+        {
+            "country": "asfas",
+            "city": "afas",
+            "price": 50,
+            "name": "ssasd",
+            "rating": 4,
+            "location": "asfa"
+        },
+        {
+            "country": "fas",
+            "city": "faf",
+            "price": 400,
+            "name": "asfas",
+            "rating": 3,
+            "location": "asfas"
+        }
+    ],
+    "Average Cost": 225,
+    "Average Rating": 3.5
 }

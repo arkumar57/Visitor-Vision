@@ -14,6 +14,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.awt.event.WindowAdapter;
 
+// Visitor Vision Application
 public class VisitorVisionGUI extends JFrame implements ActionListener {
 
     private JFrame frame = new JFrame();
@@ -53,13 +54,15 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
     }
 
     // MODIFIES: this
-    // EFFECTS: initializes input and the tour
+    // EFFECTS: initializes the tour
     private void init() {
         tour = new Tour();
     }
 
 
 
+    // MODIFIES: this
+    // EFFECTS: sets the buttons
     public void setButton() {
         addTouristPlace.setBounds(100,160,200,40);
         addTouristPlace.setFocusable(false);
@@ -81,6 +84,8 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
         loadData.addActionListener(this);
     }
 
+    // MODIFIES: this
+    // EFFECTS: sets the frame structure
     public void frameSet() {
         frame.setContentPane(label);
         frame.add(addTouristPlace);
@@ -95,6 +100,8 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
         frame.repaint();
     }
 
+    // MODIFIES: this
+    // EFFECTS: processes user command
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -123,6 +130,7 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
     }
 
 
+    // EFFECTS: saves the Tour to file
     private void saveTour() {
         try {
             jsonWriter.open();
@@ -148,10 +156,10 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
     }
 
 
+    // MODIFIES: this
+    // EFFECTS:add tourist places to the list
     private void addTouristDestination() {
-        // print to ask something
-        // ask for input from user
-        // string command = userinput
+
 
         String n = JOptionPane.showInputDialog(this, "\tAdd the name of the place ");
 
@@ -179,6 +187,8 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
     }
 
 
+    // MODIFIES: this
+    // EFFECTS:check whether rating is at most 5
     private void checkRating(int r) {
         if (r > 5) {
             System.out.println("\tinvalid");
@@ -186,6 +196,9 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
         }
     }
 
+
+    // MODIFIES: this
+    // EFFECTS:gets the list of all the tourist places added by user.
 
     private void listOfTouristPlaces() {
 
@@ -202,16 +215,21 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
         }
     }
 
+    // MODIFIES: this
+    // EFFECTS:gets the average price of visiting all the tourist places added by user.
+
     private void averagePrice() {
 
-        JOptionPane.showInputDialog(this, tour.averageCost());
+        JOptionPane.showMessageDialog(this, tour.averageCost());
+
     }
 
     // MODIFIES: this
     // EFFECTS:gets the average rating of all the tourist place added by user.
     private void averageOpinion() {
 
-        JOptionPane.showInputDialog(this, tour.averageRating());
+        JOptionPane.showMessageDialog(this, tour.averageRating());
+
     }
 
 
