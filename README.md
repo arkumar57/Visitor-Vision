@@ -30,7 +30,7 @@ As part of the project a user can:
   place of interest in the list of places." by clicking on the button visible as soon as you run the application.
 - You can generate the Second required action to the user story "save the list of the tourist places, " 
   by clicking on the button visible as soon as you run the application.
-- You can "load the list of the tourist places, " by clicking on the button visible as soon as you run the application.
+- You an "load the list of the tourist places, " by clicking on the button visible as soon as you run the application.
 - The Visual Component is visible on the background of the pop-up window as soon as you run the application.
 
 ### Phase 4: Task 2
@@ -52,4 +52,10 @@ Average Rating of tour Displayed
 Wed Nov 29 18:08:08 PST 2023
 Tourist Place Added to list.
 JFrame Closed!
+
+
+### Phase 4: Task 3
+Having more time would have allowed to add classes which would have defined individual functionality for each task in
+each different class with average rating and average pricing to be in different classes.
+
 
