@@ -33,3 +33,23 @@ As part of the project a user can:
 - You can "load the list of the tourist places, " by clicking on the button visible as soon as you run the application.
 - The Visual Component is visible on the background of the pop-up window as soon as you run the application.
 
+### Phase 4: Task 2
+
+Saved  to ./data/tour.json
+Loaded  from ./data/tour.json
+Wed Nov 29 18:07:56 PST 2023
+Tourist Place Added to list.
+Wed Nov 29 18:08:00 PST 2023
+Tourist Place list Published.
+Wed Nov 29 18:08:03 PST 2023
+Average Rating of tour Displayed
+Wed Nov 29 18:08:04 PST 2023
+Average Cost of tour Displayed
+Wed Nov 29 18:08:06 PST 2023
+Average Cost of tour Displayed
+Wed Nov 29 18:08:06 PST 2023
+Average Rating of tour Displayed
+Wed Nov 29 18:08:08 PST 2023
+Tourist Place Added to list.
+JFrame Closed!
+

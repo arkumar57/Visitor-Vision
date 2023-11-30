@@ -27,14 +27,17 @@ public class Tour implements Writable {
     //MODIFIES:this
     //EFFECTS:returns a list of tourist places
     public List<TouristPlace> getTouristPlacesList() {
+        EventLog.getInstance().logEvent(new Event("Tourist Place list Published."));
         return touristPlacesList;
     }
+
 
     //REQUIRES:
     //MODIFIES:this
     //EFFECTS:Adds a tourist place to a list of tourist places
     public void addTouristPlace(TouristPlace touristPlace) {
         this.touristPlacesList.add(touristPlace);
+        EventLog.getInstance().logEvent(new Event("Tourist Place Added to list."));
     }
 
 
@@ -46,7 +49,7 @@ public class Tour implements Writable {
         double totalRating = 0;
         double totalPlaces = 0;
 
-
+        EventLog.getInstance().logEvent(new Event("Average Rating of tour Displayed"));
         if (touristPlacesList.isEmpty()) {
             return 0;
         } else {
@@ -69,6 +72,7 @@ public class Tour implements Writable {
         double totalCost = 0.0;
         double totalPlaces = 0.0;
 
+        EventLog.getInstance().logEvent(new Event("Average Cost of tour Displayed"));
         if (touristPlacesList.isEmpty()) {
             return 0;
         } else {
@@ -80,6 +84,7 @@ public class Tour implements Writable {
 
         averageCos = totalCost / totalPlaces;
         return  averageCos;
+
 
     }
 

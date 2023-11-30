@@ -1,5 +1,7 @@
 package ui;
 
+import model.Event;
+import model.EventLog;
 import model.Tour;
 import model.TouristPlace;
 import persistence.JsonReader;
@@ -47,6 +49,10 @@ public class VisitorVisionGUI extends JFrame implements ActionListener {
             @Override
             public void windowClosing(java.awt.event.WindowEvent e) {
                 e.getWindow().dispose();
+                Iterator<Event> eventIterator = EventLog.getInstance().iterator();
+                while (eventIterator.hasNext()) {
+                    System.out.println(eventIterator.next());
+                }
                 System.out.println("JFrame Closed!");
             }
         });

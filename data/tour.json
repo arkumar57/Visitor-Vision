@@ -1,22 +1,12 @@
 {
-    "Tourist Places": [
-        {
-            "country": "asfas",
-            "city": "afas",
-            "price": 50,
-            "name": "ssasd",
-            "rating": 4,
-            "location": "asfa"
-        },
-        {
-            "country": "fas",
-            "city": "faf",
-            "price": 400,
-            "name": "asfas",
-            "rating": 3,
-            "location": "asfas"
-        }
-    ],
-    "Average Cost": 225,
-    "Average Rating": 3.5
+    "Tourist Places": [{
+        "country": "Toronto",
+        "city": "Vancouver",
+        "price": 100,
+        "name": "UBC",
+        "rating": 4,
+        "location": "UBC BUS LOOP"
+    }],
+    "Average Cost": 100,
+    "Average Rating": 4
 }
